@@ -5,7 +5,7 @@ stages
 {
     stage ('sch-checkout')
     {  steps
-             {  sh 'echo scm-checkout' }
+             {  git branch: 'master', url: 'https://github.com/Neo1345/april-pipeline-1-hello' }
     }   
     stage ('compile the code')
     { steps 
