@@ -12,7 +12,7 @@ stages
     stage ('compile the code')
     { steps 
            { sh 'echo code compilation' }
-     {withMaven(globalMavenSettingsConfig: '', jdk: 'jdk-1.8', maven: 'my_maven', mavenSettingsConfig: '', traceability: true) {
+     {withMaven(globalMavenSettingsConfig: '', jdk: ''jdk-21.0', maven: 'maven_latest', mavenSettingsConfig: '', traceability: true) {
     sh 'mvn test'
 }}
 
