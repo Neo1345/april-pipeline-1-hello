@@ -5,8 +5,8 @@ stages
 {
     stage ('sch-checkout')
     {  steps
-         {sh 'echo cloning the git repository'}
-        {  git branch: 'master', url: 'https://github.com/Neo1345/april-pipeline-1-hello' }
+         { sh 'echo code reading' }
+        
     }   
     stage ('compile the code')
     { steps 
